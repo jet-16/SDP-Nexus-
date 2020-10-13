@@ -1,0 +1,630 @@
+.content-section {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+}
+
+.bg-div {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bg-div-img {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: none;
+  filter: brightness(50%);
+}
+
+.game-name-div {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 80%;
+  overflow: hidden;
+}
+
+.game-name-div img {
+  align-self: center;
+  object-fit: cover;
+  overflow: visible;
+}
+
+.game-details-section {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.game-details-div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-video-div {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 550px;
+  background-color: black;
+  overflow: hidden;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+video {
+  outline: none;
+}
+
+.reviews-div {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 85%;
+  height: 250px !important;
+  overflow: hidden;
+}
+
+.mainimgdiv {
+  position: relative;
+  width: 40%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainimgdiv img {
+  position: absolute;
+}
+
+.mainbg {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  overflow: hidden;
+  filter: brightness(70%);
+}
+
+.mainlogo {
+  width: 60%;
+  height: 70%;
+  object-fit: contain;
+}
+
+.reviews-div-two {
+  width: 60%;
+  height: 100%;
+  background-image: linear-gradient( -60deg, rgba(226,244,255,0.3) 4%,rgba(84, 107, 115, 0.3) 40%);
+}
+
+.reviews-div h3 {
+  font-size: 30px;
+  color: #DDDDDD;
+  font-weight: normal;
+  width: 100%;
+  height: 20%;
+  overflow: visible;
+  padding: 20px 0 0 20px;
+  margin: 0;
+}
+
+.reviews-div-content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 80%;
+}
+
+.reviews-div-content-left {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 293px;
+  height: 100%;
+  justify-content: space-around;
+}
+
+.rating,
+.origin {
+  position: relative;
+  margin-left: 20px;
+}
+
+.origin {
+  top: -15px;
+}
+
+.htmlh2 {
+  width: 150px;
+}
+
+.compatibility i {
+  color: white;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.rating h2,
+.origin h2 {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 5px;
+  color: #888888;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.reviews-div-content-right {
+  position: absolute;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  width: 170px;
+  height: 80%;
+  overflow: visible;
+}
+
+.reviews-div-content-right-top,
+.reviews-div-content-right-bottom {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 50%;
+  overflow: visible;
+}
+
+.price {
+  display: flex;
+  position: relative;
+  align-self: flex-end;
+  overflow: visible;
+  margin-right: 25px;
+  font-size: 0;
+}
+
+.price h2 {
+  font-size: 24px;
+  color: white;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+.purchase-form {
+  display: flex;
+  justify-content: flex-end;
+  overflow: visible;
+}
+
+.purchase-btn,
+.download-btn {
+  display: flex;
+  position: relative;
+  width: 150px;
+  height: 50px;
+  outline: none;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-end;
+  margin: 5px 20px 10px 0;
+  cursor: pointer;
+  transition: .4s;
+  overflow: visible;
+}
+
+.purchase-btn {
+  color: #EDFFD9;
+  font-size: 13.33333px;
+  background-color: #82AD2E;
+  border: none;
+}
+
+.purchase-btn:hover {
+  background-color: #618123;
+}
+
+.download-btn {
+  border: 1px solid #333333;
+  background-image: linear-gradient(-60deg, #0E2137 30%, #16365D 70%);
+  color: white;
+  font-size: 20px;
+  transition: .5s;
+}
+
+.download-btn a,
+.purchase-btn a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+
+.download-btn:hover,
+.purchase-btn:hover {
+  filter: brightness(120%);
+  box-shadow: 0 0 10px white;
+}
+
+.download-btn:hover > a,
+.purchase-btn:hover > a {
+  color: white;
+  text-decoration: none;
+}
+
+.game-about-div {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 85%;
+  justify-content: center;
+  align-items: baseline;
+  margin-top: 30px;
+}
+
+.game-about-div h2 {
+  position: relative;
+  color: white;
+  text-transform: uppercase;
+  margin: 2% 0 0 2%;
+  font-size: 20px;
+}
+
+.game-about-div div {
+  position: relative;
+  margin: 2%;
+  color: #CCCCCC;
+  text-align: justify;
+  word-spacing: 1.5px;
+}
+
+.game-specification-div {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 60%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.game-specification-div h2 {
+  align-self: flex-start;
+  color: #DDDDDD;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin: 2%;
+}
+
+.os-div {
+  width: 100%;
+  color: white;
+  display: flex;
+}
+
+.osdiv {
+  width: 100%;
+}
+
+#windows {
+  display: flex;
+}
+
+#mac, #linux {
+  display: none;
+}
+
+.os-div h3 {
+  margin: 0 0 2.5% 2%;
+  text-transform: uppercase;
+  font-size: 15px;
+  cursor: pointer;
+  display: block;
+}
+
+.minimum-div,
+.recommended-div {
+  position: relative;
+  height: 100%;
+  width: 50%;
+  background-color: #DDDDDD;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.minimum-div div,
+.recommended-div div {
+  margin: 1%;
+  display: flex;
+  flex-direction: column;
+}
+
+.minimum-div h3,
+.recommended-div h3 {
+  font-weight: normal;
+  font-size: 15px;
+  text-transform: uppercase;
+  margin: 4% 0 5% 3%;
+}
+
+.minimum-div h4,
+.recommended-div h4 {
+  margin: 2%;
+}
+
+.minimum-div h5,
+.recommended-div h5 {
+  margin: -1.5% 2% 2% 2%;
+}
+
+.comment-box {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 883px;
+  background-image: linear-gradient(to right, #0E233C, #0E233C, #132D4D, #132D4D, #132D4D);
+  margin: 50px 0 50px 0;
+}
+
+.comment-box h2 {
+  align-self: flex-start;
+  color: #DDDDDD;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin: 2%;
+}
+
+.comments-div {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 100%;
+  border-top: 1px solid black;
+}
+
+.user-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+}
+
+.user-div img {
+  position: relative;
+  margin: 20px 20px 10px 20px;
+  width: 85%;
+  height: 225px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.user-div h3 {
+  position: relative;
+  color: #CCCCCC;
+  font-weight: normal;
+  margin: 0 10px 20px 10px;
+}
+
+.user-comments-div {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 70%;
+}
+
+.user-comments-div form {
+  height: 100%;
+  overflow-y: hidden;
+  margin: 0 0 10px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.user-comments-div textarea,
+.user-comments-div p {
+  width: 98%;
+  outline: none;
+  border: none;
+  resize: none;
+  padding: 10px;
+}
+
+.user-comments-div textarea {
+  overflow-y: scroll;
+  margin: 0 0 35px 0;
+}
+
+.user-comments-div button[type="submit"] {
+  position: absolute;
+  width: 50px;
+  height: 30px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: lightblue;
+  color: #0E233C;
+  cursor: pointer;
+  right: 0;
+  bottom: 0;
+  margin: 0 12.5px 7.5px 0;
+}
+
+.user-comments-div p {
+  color: white;
+  text-align: justify;
+  font-size: 13.5px;
+  margin: 0 0 10px 0;
+}
+
+.noreviews-div {
+  height: 200px!important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.noreviews {
+  font-size: 20px!important;
+  color: white;
+  font-size: 13.5px;
+  align-self: center!important;
+  display: flex;
+  align-items: center;
+}
+
+.social-media-div {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 85%;
+  height: 170px;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-media-div i {
+  color: white;
+}
+
+
+.form-button-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0 20px 0;
+}
+
+.form-button-div button {
+  position: relative;
+  display: flex;
+  margin: 0 12.5px 20px 12.5px;
+  width: 175px;
+  height: 50px;
+  pointer-events: all;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  background-color: transparent;
+}
+
+.submit,
+.cancel {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border-radius: 25px;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: .4s;
+}
+
+.submit {
+  border: 3px solid #8CD548;
+  color: #8CD548;
+}
+
+.submit:hover {
+  background-color: #8CD548;
+  color: black;
+  text-decoration: none;
+}
+
+.cancel:hover {
+  background-color: #D54E48;
+  color: black;
+  text-decoration: none;
+}
+
+.cancel {
+  border: 3px solid #D54E48;
+  color: #D54E48;
+}
+
+@media only screen and (max-width: 975px) {
+  .reviews-div {
+    width: 100%;
+  }
+  .game-about-div {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  .comment-box {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .reviews-div {
+    flex-direction: column;
+    height: auto!important;
+  }
+  .mainimgdiv {
+    align-self: center;
+    position: relative;
+    width: 90%;
+    height: 300px;
+    margin-bottom: 10px;
+  }
+  .reviews-div-two {
+    width: 100%;
+    height: 225px;
+  }
+  .reviews-div-content-left {
+    margin-top: 10px;
+    height: 94%;
+  }
+  .reviews-div-content-right {
+    height: auto;
+  }
+  .reviews-div-content-right-top {
+    height: 75px;
+  }
+  .reviews-div-content-right-bottom {
+    height: auto;
+  }
+  .comment-box h2 {
+    align-self: center;
+  }
+}

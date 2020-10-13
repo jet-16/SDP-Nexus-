@@ -1,0 +1,444 @@
+.block  {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 60px;
+}
+
+i {
+  color: white;
+}
+
+.cart-section {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  min-height: 73.9vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #0E233C;
+}
+
+.cart-div {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 85%;
+  height: auto;
+  overflow: visible;
+  margin: 0 0 50px 0;
+}
+
+.cart-div h1 {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100px;
+  text-transform: uppercase;
+  color: white;
+  font-size: 30px;
+  letter-spacing: 5px;
+  text-align: center;
+  padding-top: 2.5%
+}
+
+.filter-search-div {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 100%;
+  height: 80px;
+  background-color: black;
+  margin-bottom: 20px;
+  align-items: center;
+  overflow: visible;
+}
+
+.dropdown {
+  width: 5vw;
+}
+
+.dropdown-div {
+  margin: 0;
+}
+
+.dropdown-div button {
+  font-size: 1.5vw;
+}
+
+.dropdown-div button:hover {
+  color: white;
+}
+
+.dropdown-menu a:hover {
+  background-color: #0E233C;
+  color: white;
+}
+
+.search-div {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  align-items: center;
+  right: 0;
+}
+
+input {
+  width: 290px;
+  height: 40%;
+  outline: none;
+  border: none;
+  border-top-left-radius: 2.5px;
+  border-bottom-left-radius: 2.5px;
+  padding-left: 1.75%;
+}
+
+.search-icon-div {
+  width: 40px;
+  height: 40%;
+  margin-right: 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0E233C;
+  border-top-right-radius: 2.5px;
+  border-bottom-right-radius: 2.5px;
+  transition: .5s;
+}
+
+.search-icon-div:hover {
+  background-color: #1A4375;
+}
+
+.search-icon-div button {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.search-icon-div i {
+  z-index: 2;
+  overflow: visible;
+}
+
+.cart-div h5 {
+  align-self: center;
+  color: white;
+  font-size: 50px;
+  margin: 30px 0 30px 0;
+  overflow: visible;
+}
+
+.visitbtn {
+  align-self: center;
+  width: 100px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: #4B86B4;
+  color: black;
+  cursor: pointer;
+  transition: .25s;
+}
+
+.visitbtn:hover {
+  text-decoration: none;
+}
+
+.cart-div a:hover {
+  border: none;
+  color: white;
+}
+
+.cart-items-div {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 100%;
+  height: 24rem;
+  margin: 0 0 20px 0;
+  background-color: #252525;
+  box-shadow: 0 0 15px black;
+  overflow: hidden;
+}
+
+.description-div{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 60%;
+  height: 100%;
+}
+
+.description {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 30%;
+  overflow-x: visible;
+}
+
+.description h2 {
+  overflow: hidden;
+  margin: 5% 0 0 5%;
+}
+
+.d {
+  position: relative;
+  width: 100%;
+  height: 40%;
+  display: flex;
+}
+
+.game-title {
+  color: white;
+  font-weight: normal;
+  font-size: 2.2vw;
+  cursor: pointer;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  width: 143px;
+  justify-content: center;
+  margin-left: 5%;
+}
+
+.details h2 {
+  text-transform: uppercase;
+  color: #888888;
+  font-weight: normal;
+  font-size: 12px;
+  margin: 10px 0 0 0;
+}
+
+.game-details {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  justify-content: center;
+}
+
+.game-details h2 {
+  text-transform: uppercase;
+  color: #888888;
+  font-weight: normal;
+  font-size: 12px;
+  margin: 10px 0 0 0;
+}
+
+.compatibility {
+  margin-left: 7%;
+  margin-top: 5%;
+}
+
+.compatibility i {
+  margin-right: 2%;
+}
+
+.button-div {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  position: relative;
+}
+
+.cart-items-div button,
+.cart-items-div h3 {
+  align-self: flex-end;
+}
+
+.button-div a {
+  margin-right: 2.5%;
+}
+
+.purchase {
+  width: 150px;
+  height: 50px;
+  color: #EDFFD9;
+  border: none;
+  outline: none;
+  border-top-right-radius: 2.5px;
+  border-bottom-right-radius: 2.5px;
+  background-color: #82AD2E;
+  cursor: pointer;
+  transition: .25s;
+}
+
+.purchase:hover {
+  background-color: #475E19;
+  border: 2px solid white;
+}
+
+.purchase a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  color: #EDFFD9;
+}
+
+.purchase a:focus {
+  background-color: #475E19;
+  border: 2px solid white;
+  color: #EDFFD9;
+}
+
+.purchase a:hover {
+  text-decoration: none;
+  color: #EDFFD9;
+}
+
+.button-div h3 {
+  display: flex;
+  position: relative;
+  height: 50px;
+  color: #EEEEEE;
+  font-weight: normal;
+  background-color: black;
+  margin: 0!important;
+  padding: 0 5px 0 5px;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 2.5px;
+  border-bottom-left-radius: 2.5px;
+  border: 1px solid #AAAAAA;
+}
+
+.description button[type="submit"] {
+  height: 18px;
+  width: 18px;
+  cursor: pointer;
+  transition: .5s;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 2% 2% 0 0;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.description i {
+  margin: 5% 5% 0 0;
+  cursor: pointer;
+  font-size: 18px;
+  transition: .5s;
+}
+
+.description i:hover {
+  transform: scale(1.5);
+}
+
+.description i::before {
+  position: relative;
+}
+
+.img-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  width: 40%;
+  height: 100%;
+}
+
+.img-div img {
+  position: absolute!important;
+}
+
+.bgimg {
+  width: 100%;
+  height: 100%;
+  filter: brightness(70%);
+}
+
+.logoimg {
+  width: 50%;
+  height: 65%;
+}
+
+@media only screen and (max-width: 1350px) {
+  .game-title {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .logoimg {
+    width: 200px;
+    height: 154px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .dropdown-div button {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .cart-div {
+    width: 100%;
+  }
+  .itemform {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  .description button[type="submit"] {
+    margin: 5% 5% 0 0;
+  }
+  .game-title {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .filter-div {
+    margin: 0 10px 0 0;
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  .cart-items-div {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .img-div,
+  .description-div {
+    width: 100%;
+  }
+  .img-div {
+    height: 300px;
+  }
+  .description-div {
+    height: 200px;
+  }
+}
+
+@media only screen and (max-width: 690px) {
+  .game-title {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 590px) {
+  .purchase {
+    width: 120px;
+  }
+}

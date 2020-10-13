@@ -1,0 +1,937 @@
+.block  {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 60px;
+}
+
+.profile-section {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  min-height: 506px;
+  position: relative;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #EEEEEE;
+  overflow: hidden;
+}
+
+.menubar-div {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 20%;
+  background-color: #333333;
+  margin: 70px 20px 0 0;
+}
+
+.individual-div {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 100%;
+  height: 65px;
+  border: .5px solid #EEEEEE;
+  background-color: white;
+  cursor: pointer;
+  transition: .5s;
+  align-items: center;
+}
+
+.menubar-div i {
+  color: grey;
+  margin-left: 10%;
+  margin-right: 5%;
+}
+
+.menubar-div h2 {
+  color: grey;
+  font-size: 12px;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin: 0!important;
+  position: relative;
+  height: 14px;
+}
+
+.individual-div:hover {
+  border-left: 7px solid #132D4D;
+}
+
+.individual-div:hover > i,
+.individual-div:hover > h2 {
+  color: black;
+}
+
+.profile-div {
+  display: flex;
+  position: relative;
+  width: 60%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.account-div,
+iframe {
+  flex-direction: column;
+  width: 100%;
+  min-height: 70.39vh;
+}
+
+.info-div {
+  margin-left: 35px;
+}
+
+.info-div h1 {
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin:  30px 35px 35px 0;
+}
+
+.search-form {
+  width: 95%;
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 0 0 10px 0;
+}
+
+.search-form input {
+  align-self: flex-end;
+  width: 200px;
+  height: 30px;
+  font-size: 12px;
+  padding-left: 5px;
+  border: 1px solid #BBBBBB;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  outline: none;
+}
+
+.search-form input:focus {
+  border: 1px solid #999999;
+}
+
+.search-form button {
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin-right: 5px;
+  background-color: #132D4D;
+}
+
+.search-form button:hover {
+  filter: brightness(140%);
+}
+.search-form button:hover > i {
+  font-size: 11px;
+}
+
+.search-form button i {
+  font-size: 10px;
+  color: white;
+  overflow: visible;
+  transition: .25s;
+}
+
+.account-div {
+  display: flex;
+  background-color: white;
+}
+
+.account-main-div {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 35px;
+}
+
+.account-form {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 40%;
+  height: auto;
+}
+
+.account-form input[type="text"],
+.account-form input[type="email"] {
+  position: relative;
+  width: 85%;
+  height: 40px;
+  margin-bottom: 5%;
+  border: 1px solid #666666;
+  background-color: #FBFBFB;
+  border-radius: 2.5px;
+  outline: none;
+  padding-left: 5px;
+}
+
+.account-form input[type="text"]:focus,
+.account-form input[type="email"]:focus {
+  background-color: #BBBBBB;
+}
+
+.account-gender-div input[type="radio"],
+.editprofile-gender-div input[type="radio"] {
+  margin: 0;
+  margin-right: 5px;
+}
+
+.account-gender-div div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.account-form input[type='radio']:after,
+.register-form input[type='radio']:after,
+.editprofile-gender-div input[type='radio']:after {
+     width: 15px;
+     height: 15px;
+     border-radius: 15px;
+     top: -2px;
+     left: -1px;
+     position: relative;
+     background-color: #d1d3d1;
+     content: '';
+     display: inline-block;
+     visibility: visible;
+     border: 2px solid white;
+     cursor: pointer;
+ }
+
+ .account-form input[type='radio']:checked:after,
+ .register-form input[type='radio']:checked:after,
+ .editprofile-gender-div input[type='radio']:checked:after {
+     width: 15px;
+     height: 15px;
+     border-radius: 15px;
+     top: -2px;
+     left: -1px;
+     position: relative;
+     background-color: rgba(19, 45, 77, 1);
+     content: '';
+     display: inline-block;
+     visibility: visible;
+     border: 2px solid white;
+ }
+
+.account-form button[type="submit"] {
+  width: 85%;
+  height: 60px;
+  background-color: #132D4D;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  color: white;
+}
+
+.account-form h3,
+.account-div-secondary h3 {
+  font-size: 13px;
+  color: #777777;
+  padding-left: 5px;
+  font-weight: normal;
+}
+
+.account-form h3:not(.not){
+  margin-bottom: 2%;
+}
+
+.account-gender-div label,
+.editprofile-gender-div label {
+  vertical-align: middle;
+  margin: 0;
+  margin-right: 20px;
+}
+
+.account-gender-div {
+  display: flex;
+  width: 60%;
+  height: 40px;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 5%;
+  padding-left: 5px;
+}
+
+.account-form button {
+  position: relative;
+  width: 85%;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  color: white;
+  background-color: #132D4D;
+}
+
+.account-form button i {
+  font-size: 11px;
+  text-align: center;
+}
+
+.account-form button:hover,
+.register-form button[type="submit"]:hover,
+.editprofile-btn-div button[type="submit"]:hover {
+  filter: brightness(140%);
+}
+.deleteacc-div-secondary:hover {
+  filter: brightness(120%);
+}
+
+.account-div-secondary {
+  position: relative;
+  width: 55%;
+  margin-right: 5%;
+  border-right: 1px solid #888888;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-pic {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20vw;
+  height: 20vw;
+  border-radius: 100%;
+  background-color: #666666;
+  align-self: center;
+  margin: 0 0 25px 0;
+}
+
+.profile-pic img {
+  position: absolute;
+  border-radius: 100%;
+  border: none;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.approvea-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow: visible;
+  width: 95%;
+}
+
+.transactions-div,
+iframe {
+  display: none;
+  background-color: white;
+}
+
+.transaction-table-div,
+.approve-table-div {
+  position: relative;
+  margin-right: 35px;
+  width: 100%;
+  margin-bottom: 35px;
+}
+
+.transaction-table-div table,
+.approve-table-div table{
+  position: relative;
+  width: 95%;
+  border-collapse: collapse;
+}
+
+.info-div h4 {
+  font-size: 20px;
+  margin: 0 2% 0 1%;
+  overflow: visible;
+}
+
+.info-div .dropdown-div {
+  position: relative;
+  overflow: visible;
+}
+
+.dropdown-form {
+  overflow: visible;
+}
+
+.info-div .dropdown-div i {
+  color: black;
+}
+
+.table-header-transaction,
+.table-header-approve {
+  border-bottom: 2px solid #DDDDDD !important;
+}
+
+.table-header-transaction th,
+.table-header-approve th {
+  text-transform: uppercase;
+  padding: 20px;
+}
+
+.table-records-transaction td,
+.table-records-approve td {
+  font-weight: normal;
+  padding: 10px;
+}
+
+.record-title {
+  text-align: left;
+  color: #4B86B4;
+}
+
+.record-price {
+  text-align: right;
+}
+
+.record-date {
+  text-align: center !important;
+}
+
+.table-header-games {
+  text-transform: uppercase;
+  font-size: 12px;
+  border-bottom: 2px solid #DDDDDD;
+}
+
+.table-header-games th {
+  padding: 20px;
+}
+
+
+.table-records-games td {
+  width: 100px;
+  height: 100px;
+  border-bottom: none;
+  font-weight: normal;
+}
+
+.game-title {
+  text-align: left;
+  padding-left: 10px;
+  color: #4B86B4;
+  width: 30%
+}
+
+.center {
+  text-align: center;
+}
+
+.table-button {
+  background-color: #132D4D;
+  color: #DDDDDD;
+  text-align: center;
+}
+
+.appdec {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.appdec i {
+  overflow: visible;
+}
+
+.tick {
+  color: green;
+}
+
+.tick:hover,
+.tick:focus {
+  color: green;
+  filter: brightness(150%);
+}
+
+.cross {
+  color: red;
+}
+
+.cross:hover,
+.cross:focus {
+  color: red;
+  filter: brightness(150%);
+}
+
+.register-div {
+  display: none;
+  width: 100%;
+  height: 550px;
+  background-color: white;
+}
+
+.register-div .info-div {
+  width: 100%;
+}
+
+.register-main-div {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 100%;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 40%;
+  height: auto;
+}
+
+.register-form input[type="text"],
+.register-form input[type="email"],
+.register-form input[type="password"] {
+  position: relative;
+  width: 85%;
+  height: 40px;
+  margin-bottom: 5%;
+  border: 1px solid #666666;
+  background-color: #FBFBFB;
+  border-radius: 2.5px;
+  outline: none;
+  padding-left: 5px;
+}
+
+.register-form input[type="text"]:focus,
+.register-form input[type="email"]:focus,
+.register-form input[type="password"]:focus {
+  background-color: white;
+}
+
+.register-form button[type="submit"] {
+  width: 85%;
+  height: 60px;
+  background-color: #132D4D;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  color: white;
+}
+
+.register-form h3 {
+  font-size: 13px;
+  color: #777777;
+  padding-left: 5px;
+  font-weight: normal;
+  transform: translateY(-15px);
+  margin: 0;
+  margin-bottom: -20px;
+  margin-top: 20px;
+}
+
+.register-gender-div label {
+  vertical-align: middle;
+  margin-right: 20px;
+}
+
+.register-gender-div {
+  display: flex;
+  width: 60%;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 2.5%;
+  padding-left: 5px;
+  transform: translateY(-15px);
+}
+
+.constraints {
+  position: relative;
+  width: 60%;
+  border-left: 1px solid #888888;
+}
+
+.constraints h2 {
+  margin: 0 0 35px 35px;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.constraints-div {
+  margin: 0 0 0 35px;
+}
+
+.constraints-div p {
+  color: #777777;
+  font-size: 13px;
+  margin: 0 0 20px 0;
+}
+
+.usernames {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.listnames {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 35px;
+}
+
+.listnames div {
+  margin-right: 20px;
+}
+
+.listnames div p {
+  color: #555555;
+}
+
+.editprofile-div-bg {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity .5s;
+  overflow: hidden;
+}
+
+.editprofile-div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 20px;
+  width: 737px;
+  height: 607px;
+  background-color: #232323;
+  border: none;
+  border-radius: 5px;
+}
+
+.editprofile-div h1 {
+  margin-top: 20px;
+  font-size: 21px;
+  color: white;
+  overflow: visible;
+}
+
+.editprofile-form {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 85%;
+}
+
+.flex-row-div {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.flex-column-div {
+  display: flex;
+  width: 40%;
+  flex-direction: column;
+  margin: 0% 10% 3% 0;
+}
+
+.image-preview {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 300px;
+  border-radius: 100%;
+  background-color: #666666;
+  align-self: center;
+  margin: 0 0 25px 0;
+  overflow: visible;
+}
+
+.image-preview img {
+  position: absolute;
+  border-radius: 100%;
+  border: none;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.image-preview input {
+  position: absolute;
+  overflow: visible;
+  visibility: hidden;
+}
+
+.image-preview h5 {
+  position: absolute;
+}
+
+.editprofile-form input[type="text"],
+.editprofile-form input[type="email"],
+.editprofile-form input[type="password"] {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  border: 1px solid #666666;
+  background-color: #FBFBFB;
+  border-radius: 2.5px;
+  outline: none;
+  padding-left: 5px;
+}
+
+.editprofile-form input[type="text"]:focus,
+.editprofile-form input[type="email"]:focus {
+  background-color: white;
+}
+
+.editprofile-form h3 {
+  font-size: 13px;
+  color: #CCCCCC;
+  padding-left: 5px;
+  font-weight: normal;
+  overflow-y: hidden;
+}
+
+.editprofile-form h3:not(.not){
+  margin-bottom: 2%;
+}
+
+.editprofile-gender-div label {
+  vertical-align: middle;
+  margin-right: 20px;
+  color: white !important;
+}
+
+.editprofile-gender-div {
+  display: flex;
+  width: 60%;
+  height: 40px;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 5px;
+  margin: 0;
+  overflow: visible;
+}
+
+.editprofile-gender-div div {
+    display: flex!important;
+    align-items: center!important;
+    overflow: visible;
+}
+
+.editprofile-btn-div {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  overflow: visible;
+}
+
+.editprofile-btn-div button {
+  position: relative;
+  width: 40%;
+  height: 60px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.editprofile-btn-div button[type="submit"] {
+  background-color: #132D4D;
+  color: white;
+}
+
+.closebtn {
+  background-color: white;
+  color: black;
+}
+
+.closebtn:hover,
+.profilepic-btn:hover {
+  background-color: #DDDDDD;
+}
+
+.editprofile-btn-div button i {
+  font-size: 11px;
+  text-align: center;
+}
+
+.modal-active {
+  visibility: visible;
+  opacity: 1;
+  z-index: 11;
+}
+
+.profilepic-btn {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #4B86B4;
+  transform: translateY(30px);
+  bottom: 0;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.profilepic-btn i {
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 1320px) {
+  .profile-section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .menubar-div {
+    width: 240px;
+    margin: 70px 0 0 0;
+  }
+  .profile-div {
+    width: 90%;
+  }
+  .profile-pic {
+    width: 30vw;
+    height: 30vw;
+  }
+}
+@media only screen and (max-width: 880px) {
+  .profile-div {
+    width: 100%;
+  }
+  iframe {
+    overflow: scroll!important;
+  }
+  .info-div {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .account-main-div {
+    flex-direction: column;
+  }
+  .account-form {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .account-div-secondary {
+    border: none;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0;
+  }
+  .profile-pic {
+    width: 234px;
+    height: 220px;
+  }
+  .account-div-secondary h3 {
+    display: none;
+  }
+  .account-form {
+    padding-left: 8vw;
+  }
+  .info-div h1 {
+    align-self: center;
+  }
+}
+
+@media only screen and (max-width: 737px) {
+  .editprofile-div-bg {
+    height: 100%;
+    position: absolute;
+  }
+  .editprofile-div {
+    width: 100%;
+    height: 90%;
+    justify-content: center;
+    align-items: center;
+  }
+  .editprofile-div h1 {
+    font-size: 40px;
+    overflow: visible;
+  }
+  .editprofile-form{
+    height: 100%;
+  }
+  .flex-row-div {
+    flex-direction: column;
+    height: 85%;
+    justify-content: center;
+    align-items: center;
+  }
+  .flex-column-div {
+    width: 80%;
+    margin: 0 0 5% 0;
+  }
+  .editprofile-btn-div {
+    transform: translateY(50px);
+  }
+  .image-preview {
+    transform: translateY(30px);
+    width: 295px;
+  }
+}
+@media only screen and (max-width: 720px) {
+  .register-div {
+    height: auto;
+  }
+  .register-main-div {
+    flex-direction: column;
+  }
+  .register-form {
+    width: 85%;
+    align-self: center;
+  }
+  .register-form input[type="text"],
+  .register-form input[type="email"],
+  .register-form input[type="password"],
+  .register-form button[type="submit"]  {
+    width: 100%;
+  }
+  .constraints {
+    width: 85%;
+    align-self: center;
+    border: none;
+    margin: 50px 0 40px 0;
+  }
+  .usernames h2 {
+    align-self: center;
+  }
+}

@@ -1,0 +1,196 @@
+.register-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 768px;
+  background-color: #111111;
+  overflow: hidden;
+}
+
+.register-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 589px;
+  height: 630px;
+  background-color: #232323;
+  border-radius: 20px;
+}
+
+.register-div h3 {
+  position: relative;
+  text-transform: uppercase;
+  color: white;
+  font-size: 16px;
+  z-index: 1;
+  margin: 30px 0 30px 0;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: ;
+  width: 100%;
+  height: 85%;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.register-form-div {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: ;
+  width: 100%;
+  height: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  vertical-align: middle;
+  background-color: #232323;
+}
+
+.register-form-div input[type="text"],
+.register-form-div input[type="email"],
+.register-form-div input[type="password"] {
+  display: inline;
+  position: relative;
+  width: 80%;
+  height: 10%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding-left: 2.5%;
+  z-index: 2;
+  margin-bottom: 5%;
+}
+
+.gender-div {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5%;
+}
+
+.gender-div h4 {
+  color: #DDD;
+  margin-left: 5px;
+  font-size: 15px;
+}
+
+.account-gender-div {
+  display: flex;
+  flex-direction: row;
+}
+
+.account-gender-div input[type="radio"] {
+  margin: 0;
+  margin-right: 5px;
+}
+
+.account-gender-div div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  overflow: visible;
+}
+
+input[type="radio"] {
+  align-self: center;
+}
+
+input[type="radio"]:after {
+  border-radius: 50%;
+  position: absolute;
+  background-color: #d1d3d1;
+  content: '';
+  visibility: visible;
+  width: 15px;
+  height: 15px;
+  border: 2px solid white;
+  overflow: visible;
+ }
+
+input[type="radio"]:checked:after {
+  border-radius: 50%;
+  position: absolute;
+  background-color: rgba(19, 45, 77, 1);
+  content: '';
+  visibility: visible;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #d1d3d1;
+  overflow: visible;
+ }
+
+ .account-gender-div label {
+   vertical-align: middle;
+   margin: 0;
+   margin-left: 5px;
+   margin-right: 20px;
+   font-size: 15px;
+   color: white;
+ }
+
+button {
+  cursor: pointer;
+  outline: none;
+}
+
+.register-form button {
+  display: flex;
+  position: relative;
+  width: 80%;
+  height: 12.5%;
+  border: none;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  bottom: -35%;
+  margin-top: 10px;
+  outline: none;
+  border-radius: 7.5px;
+  color: #DDDDDD;
+  background-color: #0B2B43;
+}
+
+.register-form button:hover {
+  filter: brightness(150%);
+}
+
+.register-form a {
+  z-index: 1;
+  position: relative;
+  bottom: -37%;
+  text-decoration: none;
+  color: #3F83AD;
+}
+
+.register-form a:hover {
+  color: #3F83AD;
+  filter: brightness(130%);
+}
+
+.contact-div {
+  position: absolute;
+  right: 10%;
+}
+
+.contact-div h4 {
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+
+.contact-div input {
+  width: 150px!important;
+  height: 25px!important;
+}

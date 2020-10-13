@@ -1,0 +1,255 @@
+.block  {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 60px;
+}
+
+.profile-section {
+  display: flex;
+  width: 100%;
+  min-height: 70.39vh;
+  position: relative;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  background-color: #EEEEEE;
+  overflow: hidden;
+}
+
+.menubar-div {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  background-color: #333333;
+  margin: 60px 20px 0 0;
+}
+
+.individual-div {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 100%;
+  height: 65px;
+  border: .5px solid #EEEEEE;
+  background-color: white;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.menubar-div i {
+  align-self: center;
+  color: grey;
+  margin-left: 10%;
+}
+
+.menubar-div h2 {
+  color: grey;
+  font-size: 12px;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin: 4.5% 0 0 5%;
+  position: relative;
+  height: 40px;
+  padding-top: 5%;
+}
+
+.individual-div:hover {
+  border-left: 7px solid #132D4D;
+}
+
+.individual-div:hover > i,
+.individual-div:hover > h2 {
+  color: black;
+}
+
+.profile-div {
+  display: flex;
+  width: 60%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  margin-top: 60px;
+  margin-bottom: 70px;
+  overflow: hidden;
+}
+
+.customer-div,
+.dev-div,
+.admin-div {
+  flex-direction: column;
+  width: 100%;
+  background-color: white;
+}
+
+iframe {
+  position: relative;
+  min-height: 500px;
+}
+
+#customer {
+  display: flex;
+}
+
+#developer,
+#admin {
+  display: none;
+}
+
+.info-div {
+  margin: 0 35px 0 35px;
+}
+
+.info-div h1 {
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin: 30px 35px 35px 0;
+}
+
+.info-div form {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 0 0 10px 0;
+}
+
+.info-div form input {
+  align-self: flex-end;
+  width: 200px;
+  height: 30px;
+  font-size: 12px;
+  padding-left: 5px;
+  border: 1px solid #BBBBBB;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  outline: none;
+}
+
+.info-div form input:focus {
+  border: 1px solid #999999;
+}
+
+.info-div form button {
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin-right: 5px;
+  background-color: #132D4D;
+}
+.info-div form button:hover {
+  filter: brightness(140%);
+}
+.info-div form button:hover > i {
+  font-size: 11px;
+}
+
+.info-div form button i {
+  font-size: 10px;
+  color: white;
+  overflow: visible;
+  transition: .25s;
+}
+
+.customer-div table,
+.dev-div table,
+.admin-div table {
+  position: relative;
+  border-collapse: collapse;
+  border: none;
+  margin: 0 0 35px 0;
+  width: 100%;
+}
+
+.table-header-games {
+  text-transform: uppercase;
+  font-size: 12px;
+  border-bottom: 2px solid #DDDDDD;
+}
+
+.table-header-games th {
+  padding: 20px;
+}
+
+.customer-div table img,
+.dev-div table img,
+.admin-div table img {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.table-records-games td {
+  width: 100px;
+  height: 100px;
+  border-bottom: none;
+  font-weight: normal;
+}
+
+.table-records-games i {
+  color: #FF4444 !important;
+  font-size: 25px;
+  text-shadow: 0px 0px 8px black;
+  overflow: visible;
+  transition: .4s;
+}
+
+.table-records-games i:hover {
+  transform: scale(1.15);
+  filter: brightness(120%);
+  text-shadow: 0px 0px 12px black;
+}
+
+.game-title {
+  text-align: left;
+  padding-left: 10px;
+  color: #4B86B4;
+  width: 30%
+}
+
+.center {
+  text-align: center !important;
+}
+
+.table-button {
+  background-color: #132D4D;
+  color: #DDDDDD;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1320px) {
+  .profile-section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .menubar-div {
+    width: 240px;
+    margin: 70px 0 0 0;
+  }
+  .profile-div {
+    width: 90%;
+  }
+  .profile-pic {
+    width: 30vw;
+    height: 30vw;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .profile-div {
+    width: 100%;
+  }
+  iframe {
+    overflow: scroll!important;
+  }
+  .info-div {
+    display: flex;
+    flex-direction: column;
+  }
+  .info-div h1 {
+    align-self: center;
+  }
+}

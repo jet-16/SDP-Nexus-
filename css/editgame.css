@@ -1,0 +1,711 @@
+.bg-img,
+.logo,
+.main,
+.video,
+.uploadgame {
+  position: absolute;
+  color: #DDDDDD;
+}
+
+input,
+textarea,
+button {
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+
+input[type="file"] {
+  color: #AAAAAA;
+  visibility: hidden;
+  position: absolute;
+}
+
+p {
+  color: white;
+  text-shadow: 0 0 2px black, 0 0 3px black, 0 0 4px black, 0 0 20px black!important;
+}
+
+h4 {
+  text-shadow: 0 0 2px black, 0 0 3px black, 0 0 4px black, 0 0 20px black!important;
+}
+
+h5 {
+  text-shadow: 0 0 2px black, 0 0 3px black, 0 0 4px black;
+  overflow: visible;
+}
+
+select {
+  position: relative;
+  width: 150px;
+  height: 20px;
+  margin: 5px 0 0 0;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding-left: 5px;
+}
+
+.label {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  border: 2px solid white;
+  color: white;
+  cursor: pointer;
+  transition: .5s;
+  z-index: 1;
+}
+
+.label:hover {
+  background-color: rgba(0,0,0,1);
+  transform: scale(1.3);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  width: 85%;
+}
+
+.form-button-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0 30px 0;
+  overflow: visible;
+}
+
+.form-button-div button {
+  margin: 0 12.5px 20px 12.5px;
+  width: 175px;
+  height: 75px;
+  outline: none;
+  pointer-events: all;
+  cursor: pointer;
+}
+
+.submit {
+  color: white;
+  background-color: #1D4A7F;
+}
+
+.submit:hover {
+  filter: brightness(120%);
+}
+
+.cancel {
+  background-color: #DDDDDD;
+}
+
+.cancel:hover {
+  background-color: #fff;
+}
+
+.cancel a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: black;
+}
+#bg-divp,
+#logop,
+#mainp {
+  overflow: hidden;
+}
+
+img[src=""] {
+  opacity: 0;
+}
+
+.content-section {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+}
+
+.bg-div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 600px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: linear-gradient( -180deg, #040404 40%, #171717 60%);
+}
+
+.game-bg-div {
+  overflow: visible;
+  position: absolute;
+  transform: translate(50px, 350px);
+}
+
+#bg-divp {
+  position: fixed;
+  align-self: baseline;
+  width: 100%;
+  height: 600px;
+  filter: brightness(50%);
+}
+
+.game-bg-div p {
+  font-size: 40px;
+  margin: 10px 0 10px 0;
+  text-align: center;
+  opacity: 0;
+  z-index: 1;
+  text-shadow: 0px 0px 10px black;
+  transition: .35s;
+  transform: translateY(-50px);
+  overflow: visible;
+}
+
+.game-bg-div h4 {
+  font-size: 13px;
+  text-align: left;
+  color: white;
+  opacity: 0;
+  z-index: 1;
+  text-shadow: 0px 0px 10px black;
+  transition: .35s;
+  transform: translateY(-50px);
+  overflow: visible;
+}
+
+.game-bg-div label {
+  transform: translateY(170px);
+  z-index: 1;
+}
+
+.game-bg-div label:hover {
+  transform: translateY(170px) scale(1.3);
+}
+
+.game-bg-div label:hover < .bg-div {
+  background-color: #080808;
+}
+
+.game-bg-div label:hover ~ p,
+.game-bg-div label:hover ~ h4  {
+  opacity: 1;
+}
+
+.bg-img {
+  transform: translate(65px, -25px);
+}
+
+.game-name-div {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  width: 450px;
+  height: 450px;
+  overflow: visible;
+  margin-top: 100px;
+}
+
+.game-name-div img {
+  align-self: center;
+  object-fit: cover;
+  position: absolute;
+}
+
+.game-name-div p {
+  font-size: 40px;
+  margin: 10px 0 10px 0;
+  text-align: center;
+  opacity: 0;
+  z-index: 1;
+  text-shadow: 0px 0px 10px black;
+  overflow: visible;
+  transform: translateY(25px);
+  transition: .35s;
+}
+
+.game-name-div h4 {
+  font-size: 13px;
+  text-align: center;
+  color: white;
+  opacity: 0;
+  z-index: 1;
+  text-shadow: 0px 0px 10px black;
+  overflow: visible;
+  transform: translateY(20px);
+  transition: .35s;
+}
+
+.logo {
+  transform: translateY();
+}
+
+.game-name-div label:hover ~ p,
+.game-name-div label:hover ~ h4  {
+  opacity: 1;
+}
+
+.game-name-div label {
+  position: relative;
+  transform: translateY(285px);
+}
+
+.game-name-div label:hover {
+  background-color: rgba(0,0,0,1);
+  transform: translateY(285px) scale(1.3);
+}
+
+.game-details-section {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.game-details-div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-video-div {
+  display: flex;
+  flex-direction: column-reverse;
+  position: relative;
+  width: 100%;
+  height: 550px;
+  background-color: black;
+  overflow: hidden;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-image: linear-gradient( -360deg, rgba(64,82,88,0.3) 4%, rgba(115, 140, 149, 0.3) 60%);
+}
+
+#videop {
+  position: absolute;
+  object-fit: cover;
+  outline: none;
+  width: 100%;
+  height: 100%;
+}
+
+.upload-video-div {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 50px;
+  background-image: linear-gradient( -360deg, rgba(64,82,88,0.3) 4%, rgba(115, 140, 149, 0.3) 60%);
+}
+
+.upload-video-div-secondary {
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 20px  0 20px 0;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
+}
+
+.h4p {
+  display: flex;
+  position: absolute;
+  flex-direction: column-reverse;
+  left: 20%;
+  margin-left: 40px;
+  opacity: 0;
+  transition: .35s;
+}
+
+.upload-video-div-secondary p {
+  position: absolute;
+  left: 0;
+  font-size: 40px;
+  margin: 0;
+  margin-left: 20px;
+}
+
+.h4p h4 {
+  font-size: 13px;
+  color: white;
+  text-align: center;
+}
+
+.upload-video-div label {
+  position: relative;
+  left: 0;
+  margin-left: 40px;
+}
+
+.upload-video-div label:hover {
+  background-color: rgba(0,0,0,1);
+  transform: scale(1.3);
+}
+
+.upload-video-div label:hover ~ div {
+  opacity: 1;
+  z-index: 10;
+}
+
+.video {
+  position: absolute;
+  right: 0;
+  margin-right: 20px;
+}
+
+.reviews-div {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 85%;
+  height: 250px;
+  overflow: hidden;
+}
+
+.img {
+  display: flex;
+  flex-direction: column-reverse;
+  position: relative;
+  width: 40%;
+  height: 100%;
+}
+
+#mainp {
+  position: absolute;
+  object-fit: cover;
+  width: 65%;
+  height: 100%;
+}
+
+.img input {
+  position: relative;
+  display: none;
+}
+
+.img p {
+  font-size: 40px;
+  margin: 10px 0 10px 15px;
+  opacity: 0;
+  transition: .35s;
+  z-index: 1;
+  text-shadow: 0px 0px 10px black;
+  overflow: visible;
+}
+
+.img h4 {
+  font-size: 13px;
+  color: white;
+  margin: 0 0 20px 15px;
+  opacity: 0;
+  transition: .35s;
+  z-index: 1;
+  text-shadow: 0px 0px 10px black;
+  overflow: visible;
+}
+
+.img label:hover ~ p,
+.img label:hover ~ h4  {
+  opacity: 1;
+}
+
+.img label {
+  position: relative;
+  margin: 0 0 10px 10px;
+  z-index: 1;
+}
+
+.img label:hover {
+  background-color: rgba(0,0,0,1);
+  transform: scale(1.3);
+}
+
+.main {
+  transform: translate(75px, -15px);
+}
+
+.des {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  position: relative;
+  padding-left: 20px;
+  overflow: hidden;
+  background-color: #181818;
+}
+
+.des1 {
+  width: 50%;
+}
+
+.reviews-div-content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 50%;
+  overflow: visible;
+  justify-content: flex-end;
+}
+
+.reviews-div-content p {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  align-self: flex-end;
+  z-index: 1;
+  margin: 0 12px 60px 0;
+}
+
+.reviews-div-content label {
+  display: flex;
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  background-color: #1D4A7F;
+  border-radius: 5px;
+  align-self: flex-end;
+  cursor: pointer;
+  z-index: 1;
+  right: 0;
+  bottom: 0;
+  transition: .4s;
+  margin: 0 10px 10px 0;
+  overflow: visible;
+}
+
+.reviews-div-content label:hover {
+  border: 1px solid #DDDDDD;
+}
+
+label[for="uploadgame"]:hover ~ div {
+  opacity: 1;
+}
+
+.reviews-div-content input {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  visibility: hidden;
+}
+
+.reviews-div-content i {
+  position: absolute;
+  overflow: visible;
+  font-size: 25px;
+  color: white;
+}
+
+.uploadgame {
+  display: flex;
+  color: white;
+  font-size: 17px;
+  right: 0;
+  height: 50%;
+  padding-right: 10px;
+  margin: 0;
+}
+
+.showdes {
+  position: absolute;
+  width: 100%;
+  height: 40%;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  opacity: 0;
+  transition: .35s;
+}
+
+.reviews-div-content h4,
+.reviews-div-content h3 {
+  color: white;
+  margin-right: 10px;
+}
+
+.showdes h4 {
+  font-size: 14px!important;
+}
+
+.showdes h3 {
+  font-size: 28px!important;
+  text-shadow: 0 0 2px black, 0 0 3px black, 0 0 4px black, 0 0 20px black!important;
+}
+
+.category-div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0 30px 0;
+}
+
+p[name="cat"] {
+  margin: 0!important;
+}
+
+.title-input {
+  position: relative;
+  display: flex;
+  width: 200px;
+  height: 30px;
+  margin: 15px 0 15px 0;
+  padding-left: 5px;
+}
+
+.price {
+  display: flex;
+  position: relative;
+}
+
+.price-input {
+  height: 25px;
+  width: 100px;
+  padding-left: 5px;
+}
+
+.rating,
+.origin {
+  display: inline;
+  position: relative;
+  height: 25%;
+  vertical-align: middle;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.rating {
+  width: 25%;
+}
+
+.origin {
+  width: 25%;
+}
+
+.rating h2,
+.origin h2 {
+  display: inline-block;
+  position: relative;
+  width: 45%;
+  height: 45%;
+  color: #888888;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.game-about-div {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 85%;
+  margin-top: 20px;
+  justify-content: center;
+  background-color: #333333;
+}
+
+.game-about-div h2 {
+  position: relative;
+  color: white;
+  text-transform: uppercase;
+  margin: 2% 0 0 2%;
+  font-size: 20px;
+}
+
+.description-div {
+  margin: 20px;
+  width: auto;
+  height: auto;
+}
+
+#TypeHere {
+  height: 300px;
+  margin-right: 20px;
+  overflow-x: scroll;
+  resize:none;
+}
+
+.description-div .tox-menubar {
+  display: none;
+}
+
+.game-specification-div input {
+  width: 100%;
+  height: 25px;
+}
+
+@media only screen and (max-width: 1282px) {
+  .reviews-div {
+    width: 100%;
+  }
+  .game-about-div {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1015px) {
+  .form {
+    width: 100%;
+  }
+  .game-details-div {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 726px) {
+  .reviews-div {
+    flex-direction: column;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .img {
+    width: 460px;
+    height: 210px;
+    align-self: center;
+  }
+  #mainp {
+    width: 460px;
+    height: 210px;
+  }
+  .img h4 {
+    transform: translateY(-20px);
+    margin: 0 0 0 15px;
+  }
+  .des {
+    width: 100%;
+  }
+  .price {
+    margin-bottom: 15px;
+  }
+}

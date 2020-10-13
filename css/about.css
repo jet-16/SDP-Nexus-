@@ -1,0 +1,217 @@
+/* ========Main Content======== */
+.content-section {
+  min-width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+/* ========Hero======== */
+.hero-div {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  min-width: 100%;
+  min-height: 810px;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Hero Video */
+.hero-div video {
+  position: fixed;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  filter: blur(2px) brightness(30%);
+  border: none;
+  transform: scale(1.03);
+}
+/* /Hero Video */
+
+.hero-description {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* Logo */
+.hero-description img {
+  align-self: center;
+  transform: scale(1);
+  margin: -15px 0 10px 0;
+}
+/* /Logo */
+
+.hero-description h1 {
+  font-size: 80px;
+  color: white;
+  text-transform: uppercase;
+  margin: 0 0 50px 0;
+}
+
+.hero-description p {
+  width: 60%;
+  color: white;
+  font-size: 18px;
+  text-align: justify;
+}
+
+/* ========/Hero======== */
+
+/* ========About======== */
+.about-section {
+  width: 100%;
+  height: auto;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-div-one,
+.about-div-sec,
+.about-div-thi {
+  display: flex;
+  width: 100%;
+  height: 65.2vh;
+  height: auto;
+  position: relative;
+  background-color: black;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.about-div-one {
+  margin-top: 50px;
+}
+
+.about-div-one .about-div-description,
+.about-div-thi .about-div-description {
+  transform: translateX(-20px);
+}
+
+.about-div-sec .about-div-description {
+  transform: translateX(20px);
+}
+
+.about-section img {
+  width: 46%;
+  height: 85%;
+}
+
+.about-div-description {
+  width: 40%;
+  height: auto;
+}
+
+.about-div-description h3 {
+  font-size: 3.5vw;
+  color: white;
+  margin: 0 0 50px;
+}
+
+.about-div-description p {
+  text-align: justify;
+  color: #DDDDDD;
+  font-size: 1.5vw;
+  margin: 0 0 25px 0;
+}
+
+.about-div-description a {
+  display: flex;
+  position: relative;
+  width: 13.888vw;
+  height: 7.83vh;
+  font-size: 1.111vw;
+  background-color: transparent;
+  border: 2px solid #4B86B4;
+  outline: none;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: .5s ease;
+}
+
+.about-div-description a:hover {
+  background-color: #4B86B4;
+  color: black;
+}
+
+/* ========/About======== */
+
+/* /========Main Content======== */
+@media only screen and (max-width: 1020px) {
+  .hero-description h1 {
+    font-size: 7vw;
+  }
+
+  .hero-description p {
+    font-size: 1.75vw;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .about-div-one,
+  .about-div-sec,
+  .about-div-thi {
+    margin-bottom: 20px;
+  }
+
+  .about-section img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  .about-div-one .about-div-description,
+  .about-div-sec .about-div-description,
+  .about-div-thi .about-div-description {
+    transform: translateX(0px);
+  }
+
+  .about-div-description {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .about-div-description h3 {
+    margin: 0 2% 25px 2%;
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .about-div-description p {
+    margin: 0 10% 25px 10%;
+    font-size: 20px;
+    text-shadow: 0 0 20px black;
+    overflow: visible;
+  }
+
+  .about-div-description a {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .hero-description p {
+    font-size: 2vw;
+  }
+}

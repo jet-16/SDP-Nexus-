@@ -1,0 +1,564 @@
+
+/* Main Content */
+.store-section {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-color: #0E233C;
+  align-items: center;
+  overflow: visible;
+}
+
+/* Filter & Search */
+.menu-div {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  height: 50px;
+  background-color: #4B6380;
+  position: relative;
+  align-items: center;
+  z-index: 1;
+  overflow: visible;
+  transform: translateY(65px);
+}
+
+.menu-div a{
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+}
+
+.menu-div .dropdown {
+  margin:  0 0 0 2%;
+}
+
+.menu-div .dropdown-menu a:hover {
+  background-color: #0E233C;
+  color: white;
+}
+
+.menu-div .dropdown-menu {
+  font-size: 12px;
+}
+
+.searchbar-form {
+  position: absolute;
+  display: flex;
+  width: 30%;
+  height: 80%;
+  right: 0;
+  margin-right: 10px;
+}
+
+.search-div {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+
+.searchbar-div {
+  display: flex;
+  width: 85%;
+  height: 100%;
+  align-self: center;
+}
+
+.searchbar-div input {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding-left: 15px;
+  outline: none;
+  border: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.searchicon-div {
+  display: flex;
+  width: 15%;
+  height: 100%;
+}
+
+.searchicon-div button {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: #0E233C;
+}
+
+button i {
+  color: white;
+  overflow: visible;
+  font-size: 18px;
+}
+/* /Filter & Search */
+
+.title-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 30rem;
+  background-color: black;
+}
+
+.title-div img {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  object-fit: cover;
+}
+
+.title-div h1 {
+  position: absolute;
+  color: white;
+  text-transform: uppercase;
+  font-size: 35px;
+  font-weight: normal;
+  overflow: visible;
+  text-shadow: 0 0 10px black;
+}
+
+.content-div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-self: center;
+  overflow: visible;
+}
+
+.categorized-div h3 {
+  text-transform: uppercase;
+  font-size: 16px;
+  margin: 2%;
+  color: white;
+}
+
+.new-release, .newrelease-div, .nr, .newrelease {
+  overflow: visible;
+}
+
+.new-release {
+  background-color: #132D4D;
+  display: block;
+  position: relative;
+  width: 80%;
+  height: 36rem;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  transform: translateY(0px);
+}
+
+.newrelease-div {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.nr {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  padding-left: 1%;
+}
+
+.newrelease{
+  display: inline-block;
+  position: relative;
+  width: 31%;
+  height: 200px;
+  background-color: #222222;
+  margin: 10px;
+}
+
+.newrelease:hover {
+  transition: .1s ease;
+  transform: scale(1.3, 1.5);
+  z-index: 1;
+}
+
+.special-offer-description-div {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  overflow: visible;
+  background-image: linear-gradient(to top, black, transparent);
+}
+
+.special-offer-description-div:hover {
+  opacity: 1;
+  filter: linear-gradient(to top, black, transparent, transparent);
+}
+
+.special-offer-description-div img {
+  width: 50px;
+  height: 50px;
+  align-self: flex-end;
+  bottom: 5%;
+  left: 10%;
+}
+
+.price-div ,
+.special-offer-description-div h5 {
+  position: absolute;
+  align-self: flex-end;
+  color: white;
+  right: 10%;
+}
+
+.special-offer-description-div h5 {
+  font-size: 20px;
+  bottom: 20%;
+  font-weight: normal;
+}
+
+.price-div {
+  bottom: 10%;
+  display: flex;
+  width: 70%;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.strikethrough {
+  text-decoration: line-through solid #888888;
+  color: #888888;
+}
+
+.price-div h6,
+.price-div p,
+.price-div h7 {
+  margin: 0 0 0 10px;
+  font-weight: normal;
+}
+
+.price-div h6 {
+  position: relative;
+  text-align: center;
+  width: 20%;
+  height: 80%;
+  font-weight: normal;
+  background-color: #82AD2E;
+  border-radius: 1.5px;
+}
+
+input[type="radio"] {
+  position: absolute;
+  visibility: hidden;
+}
+
+.slide-btn {
+  position: absolute;
+  display: flex;
+  overflow: visible;
+  top: 80%;
+  left: 42.5%;
+}
+
+.slide-btn label {
+  width: 60px;
+  height: 7px;
+  border: 1px solid #DDDDDD;
+  margin: 5px;
+}
+
+.slide-btn label:hover {
+  background-color: #DDDDDD;
+}
+
+.s1 {
+  z-index: 2;
+}
+
+#s1:checked ~ .s1 {
+  z-index: 2;
+}
+#s2:checked ~ .s2 {
+  z-index: 2;
+}
+#s3:checked ~ .s3 {
+  z-index: 2;
+}
+
+.all-games-div {
+  display: flex;
+  align-self: center;
+  position: relative;
+  width: 80%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.allgames-div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-left: 2.5%;
+}
+
+.allgames-div form {
+  position: relative;
+  margin: 17px;
+  width: 230px;
+  height: 300px;
+  overflow: hidden;
+  box-shadow: 0px 2px 10px black;
+}
+
+.allgames {
+  position: relative;
+  width: 100%;
+  min-width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.allgames img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  overflow: hidden;
+}
+
+img[src=] {
+  visibility: hidden;
+}
+
+.pricetag-div {
+  position: absolute;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  right: 0;
+  margin: 0 5% 5% 0;
+  z-index: 1;
+  background-color: black;
+}
+
+.discount {
+  color: white;
+  margin-right: 5px !important;
+}
+
+.original {
+  color: #AAAAAA;
+  text-decoration: line-through;
+}
+
+.discount,
+.original {
+  font-weight: normal;
+  margin: 0 0 0 10px;
+  overflow: visible;
+  font-size: 20px;
+}
+
+.dis-per {
+  position: relative;
+  display: block;
+  width: 25%;
+  height: 100%;
+  background-color: #82AD2E;
+  padding: 3px;
+  font-size: 15px;
+}
+
+.allgames-info {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 102%;
+  transform: translateY(-0%);
+  background: linear-gradient( to bottom, #294971 0%, #113158 100% );
+  transition: .5s ease-in-out;
+}
+
+.allgames:hover > .allgames-info {
+  transform: translateY(-100%);
+}
+
+.allgames-info a {
+  text-decoration: none;
+}
+
+.allgames-info video {
+  position: relative;
+  width: 100%;
+  top: 0;
+  border: none;
+}
+
+.allgames-info p {
+  color: white;
+  font-size: 20px;
+  margin: 7.5% 7.5% 0 7.5%;
+}
+
+.developer-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 2.5% 7.5% 0 7.5%;
+}
+
+.allgames-info h3 {
+  color: #777777;
+  font-size: 12px;
+}
+
+.allgames-info h4 {
+  color: #BBBBBB;
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+.starrr {
+  margin: 5% 0 0 7.5%;
+}
+
+.allgames-info button {
+  width: 20%;
+  height: 10%;
+  font-size: 12px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 0 5% 20% 0;
+  display: inline-block;
+  background-color: #82AD2E;
+  padding: 2px;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  vertical-align: middle;
+  overflow: visible;
+}
+
+.allgames-div button:hover > .tip {
+  visibility: visible;
+}
+
+.tip {
+  position: absolute;
+  width: 70px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  transform: translate(-15px, -47.5px);
+  visibility: hidden;
+  cursor: none;
+  pointer-events: none;
+}
+
+
+.allgames-info button .fas-shopping-bag {
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.fa-plus {
+  position: absolute;
+  font-size: 13px;
+  -webkit-text-stroke: .75px #82AD2E;
+  transform: translate(-22px, 9px);
+}
+
+.download {
+  background-color: #0A1829 !important;
+  border: 1px solid white !important;
+  transition: .4s;
+}
+
+.download:hover {
+  background-color: white !important;
+}
+
+.download:hover > .fa-download {
+  color: #0A1829 !important;
+}
+
+.nogames {
+  width: 100%;
+}
+
+.nogames h1 {
+  color: white!important;
+  margin: 100px 0 100px 0;
+}
+
+/* /Main Content */
+
+@media only screen and (max-width: 1350px) {
+  .allgames-div form {
+    width: 200px;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .allgames-div form {
+    width: 250px;
+    height: 320px;
+  }
+  .menu-div {
+      width: 100%;
+      margin-left: 0;
+  }
+
+  .searchbar-form {
+    width: 334px;
+  }
+  .searchicon-div {
+    width: 47px;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .allgames-div form {
+    width: 230px;
+    height: 320px;
+  }
+}
+@media only screen and (max-width: 670px) {
+  .allgames-div form {
+    width: 300px;
+    height: 370px;
+  }
+}

@@ -1,0 +1,120 @@
+.login-section {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 768px;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.loginbg-div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  justify-content: center;
+  align-items: baseline;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.loginbg-div video {
+  position: fixed;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  filter: blur(4px) brightness(70%);
+  border: none;
+  transform: scale(1.03);
+}
+
+.login-div {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 589px;
+  height: 614px;
+  background-color: #DDDDDD;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-div img {
+  position: relative;
+  display: block;
+  width: 100px;
+  height: 100px;
+}
+
+.login-div h3 {
+  text-transform: uppercase;
+  color: #222222;
+  font-size: 16px;
+  margin-top: 2%;
+  margin-bottom: 3%;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: ;
+  width: 100%;
+  height: 60%;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form input {
+  display: flex;
+  position: relative;
+  width: 80%;
+  height: 15%;
+  margin: 2.5% 0 2.5% 0;
+  padding-left: 2.5%;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  color: #555555;
+}
+
+.login-form button {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  position: relative;
+  width: 80%;
+  height: 20%;
+  margin: 7.5% 0 0 0;
+  border: none;
+  border-radius: 7.5px;
+  outline: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: #DDDDDD;
+  background-color: #0B2B43;
+}
+
+.login-div a {
+  position: relative;
+  display: flex;
+  text-decoration: none;
+  color: #0B2B43;
+  justify-content: center;
+}
+
+.links {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
